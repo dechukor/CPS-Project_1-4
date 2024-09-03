@@ -1,0 +1,208 @@
+/* +++++++++++++++++++++++++++++++++ CPS-Project_1-4 ++++++++++++++++++++++++++++++++++++ */
+/* Сброс, начальные значения*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'TT Lakes';
+  color: #1B1C21;
+}
+
+body {
+  height: 100vh;
+  width:320px;
+  background-color: #FFF; 
+}
+
+
+/* ========================
+   Подключение шрифтов
+   ======================== */
+@font-face {
+	font-family: 'TT Lakes';
+  font-style: normal;
+	font-weight: normal;
+  src: url(../fonts/TTLakes/TTLakes-Regular.ttf); 
+ }
+
+ @font-face {
+	font-family: 'TT Lakes';
+  font-style: normal;
+	font-weight: bold;
+	src: url(../fonts/TTLakes/TTLakes-Bold.ttf);   
+ }
+
+ @font-face {
+	font-family: 'TT Lakes';
+  font-style: italic;
+	font-weight: normal;
+	src: url(../fonts/TTLakes/TTLakes-Italic.ttf);   
+ }
+
+/* ========================
+   Кнопки
+   ======================== */
+
+
+/* Основная кнопка */
+.primary-btn {
+  height: 40px;
+  border-radius: 20px;
+  border: none; 
+  white-space: nowrap;    
+  background:none;
+  transition: 1s;  
+}
+
+.primary-btn:hover {
+  filter: opacity(0.5);
+}
+
+/* Навигационная кнопка */
+.nav-btn {
+  height: 32px;
+  font-size: 16px;
+  white-space: nowrap;  
+  background: none;
+  border: none;    
+}
+
+/* Навигационная кнопка в фокусе */
+.nav-btn:focus {
+  color: #7E7E82; 
+}
+
+/* Кнопка выбора языка */
+.lang-btn {
+  height: 32px;
+  font-size: 16px;
+  white-space: nowrap;  
+  background: none;
+  border: none; 
+}
+
+.lang-btn:focus {
+  color: #7E7E82; 
+}
+
+
+/* ========================
+      Основной контейнер
+   ======================== */
+
+.main-container {
+  box-shadow:
+    16px 0px 52px 0px rgba(14, 24, 80, 20%),
+    -2px 0px 4px 0px rgba(69, 79, 126, 2%);
+    
+}
+
+/* ========================
+            Шапка
+   ======================== */
+
+
+/* Блок-список с кнопками (шапка) */
+.hdr-menu {  
+  display: flex; 
+  align-items: center;
+  height: 88px;
+  margin: 0 24px 24px 24px;  
+}
+
+/* Элемент списка с кнопками (шапка) */
+.hdr-menu__item {
+  margin-left: 16px;
+}
+
+.hdr-menu__item:first-child {
+  margin-left: 0px;
+}
+
+/* Смещение части элементов к правому краю (шапка) */
+.hdr-menu__item_pos-right {
+  margin-right: auto;
+}
+
+/* ========================
+       Секция навигации
+   ======================== */
+
+.nav-sect {
+  margin: 0 24px 268px 24px;
+}
+
+/* Блок-список с кнопками навигации (секция навигации) */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-wrap: nowrap;  
+}
+
+.nav-list__item {
+  display: flex;
+}
+
+/* Плашка перед пунктом меню (секция навигации) */
+.accent-line::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  margin-left: -24px;
+  margin-right: 20px;
+  background-color: #41F6D7;
+  border-radius: 0px 4px 4px 0px;
+ }
+
+/* ========================
+          Подвал
+   ======================== */
+.foot_sect {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 24px 32px 24px;
+}
+
+/* Блок-список с кнопками (подвал) */
+.list-menu {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.list-menu__item {
+  margin-left: 16px;
+}
+
+.list-menu__item:first-child {
+  margin-left: 0px;
+}
+
+/* Электронная почта (подвал) */
+.email-lbl {
+  font-size: 16px;
+  margin-bottom: 12px;  
+}
+
+/* Телефон (подвал) */
+.phone-lbl {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px; 
+}
+
+/* Блок-список выбор языка (подвал) */
+.list-lang {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.list-lang__item {
+  margin-left: 7px;
+}
+
+.list-lang__item:first-child {
+  margin-left: 0px;
+}
+
